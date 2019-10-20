@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NASA Challenge</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+            <h1>The Challenge | Rising Water</h1>
+    </header>
+
+    <div class="divider">
+        <h1>Hot Water</h1>
+    </div>
+
+    <div class="about">
+        <p>
+            Our goal is to inform the connection between global warming and rising sea levels through simple visualizations of data.
+        </p>
+
+        <p class="fine-print">
+            You're all in hot water now
+        </p>
+    </div>
+
+    <img src="northcove.jpg">
+    <p>North Cove, Washington</p>
+
+    <div class="divider">
+        <h1>Impact</h1>
+    </div>
+
+    <div id='map'></div>
+
+    <div class="carousel">
+        <button class="carousel__button carousel__button--left is-hidden">
+            <img src="left.png">
+        </button>
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img class="carousel__image" src="cool maps.png" alt="">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="SeaLevelGraph.png" alt="">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="GlobalTemperature.png" alt="">
+                </li>
+                <li class="carousel__slide">
+                        <img class="carousel__image" src="co2.png" alt="">
+                    </li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__button--right">
+            <img src="right.png">
+        </button>
+    </div>
+
+    <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+    </div>
+
+    <div class="divider">
+        <h1>fin</h1>
+    </div>
+
+    <img class="team" src="team.jpg">
+
+    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript" src="carousel.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkULqu-w1zeXlxPKI-MORtszoIkO4sWIw&callback=initMap" async defer></script>
+
+    <!--<div class="slidercontainer">
+        <div class="showSlide fade">
+            <img src="map.png" />
+            <div class="content"></div>
+        </div>
+        <div class="showSlide fade">
+            <img src="SeaLevelGraph.png" />
+            <div class="content"></div>
+        </div>
+
+        <a class="left" onclick="nextSlide(-1)">❮</a>
+        <a class="right" onclick="nextSlide(1)">❯</a>
+    </div>
+    <script type="text/javascript" src="index.js"></script>-->
+</body>
+
+</html>
